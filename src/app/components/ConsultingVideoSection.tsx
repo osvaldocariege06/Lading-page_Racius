@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 import React from "react";
 
 export function ConsultingVideoSection() {
@@ -11,9 +12,11 @@ export function ConsultingVideoSection() {
         <p className="mt-4 text-lg text-gray-700">
           Soluções inovadoras para o seu negócio com especialistas do setor.
         </p>
-        <button className="mt-6 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md text-lg font-semibold tracking-wide transition-transform duration-300 transform hover:scale-105 hover:bg-blue-600">
-          CONTACTE-NOS
-        </button>
+        <Link href="#localização">
+          <button className="mt-6 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md text-lg font-semibold tracking-wide transition-transform duration-300 transform hover:scale-105 hover:bg-blue-600">
+            CONTACTE-NOS
+          </button>
+        </Link>
       </div>
 
       <div className="w-full max-w-2xl md:max-w-md lg:max-w-lg xl:max-w-xl">
