@@ -78,12 +78,13 @@ export default function Home() {
         </div>
 
         <motion.div
-          className="w-3/4 md:w-1/2 max-w-md"
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <Image src="/amico.png" alt="Ilustração" width={500} height={400} layout="responsive" />
-        </motion.div>
+        className="w-3/4 md:w-1/2 max-w-md relative z-10 mt-[-38px]"
+        animate={{ y: [0, -15, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <Image src="/amico.png" alt="Ilustração" width={500} height={400} layout="responsive" />
+      </motion.div>
+
       </motion.section>
 
       <svg

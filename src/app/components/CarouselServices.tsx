@@ -88,7 +88,7 @@ export default function CarouselServices() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 ">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-white">
       <h2 className="text-5xl font-extrabold text-black">OUTROS SERVIÇOS</h2>
       <p className="text-gray-600 uppercase text-lg mt-2">
         SERVIÇOS PRESTADOS PELA RACIUS ADVISORY
