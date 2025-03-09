@@ -1,27 +1,27 @@
 "use client";
 
-import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle, Link } from "lucide-react";
 
 export default function ContactInfo() {
   return (
-    <div className="bg-gradient-to-r from-gray-700 to-blue-800 text-white p-6 sm:p-8 rounded-lg shadow-md w-full max-w-xs sm:max-w-sm">
-      <div className="flex items-center gap-3 mb-3">
-        <MapPin className="w-5 h-5" />
-        <p className="text-sm sm:text-base">Angola/Luanda/Porto de Luanda</p>
+    <div className="bg-gradient-to-r from-gray-800 to-blue-900 text-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm">
+      <div className="flex items-center gap-4 mb-4">
+        <MapPin className="w-6 h-6 text-blue-300" />
+        <p className="text-base sm:text-lg font-medium">Angola / Luanda / Ilha de Luanda</p>
       </div>
-      <div className="flex items-center gap-3 mb-3">
-        <Mail className="w-5 h-5" />
-        <a href="mailto:ivandropanzo583@gmail.com" className="hover:underline text-sm sm:text-base">
+      <div className="flex items-center gap-4 mb-4">
+        <Mail className="w-6 h-6 text-blue-300" />
+        <Link href="mailto:ivandropanzo583@gmail.com" className="hover:underline text-base sm:text-lg font-medium">
           ivandropanzo583@gmail.com
-        </a>
+        </Link>
       </div>
-      <div className="flex items-center gap-3 mb-3">
-        <MessageCircle className="w-5 h-5" />
-        <p className="text-sm sm:text-base">Whatsapp</p>
+      <div className="flex items-center gap-4 mb-4">
+        <MessageCircle className="w-6 h-6 text-blue-300" />
+        <p className="text-base sm:text-lg font-medium">Whatsapp</p>
       </div>
-      <div className="flex items-center gap-3">
-        <Phone className="w-5 h-5" />
-        <p className="text-sm sm:text-base">+244 947838429</p>
+      <div className="flex items-center gap-4">
+        <Phone className="w-6 h-6 text-blue-300" />
+        <p className="text-base sm:text-lg font-medium">+244 947 838 429</p>
       </div>
     </div>
   );
