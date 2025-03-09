@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import HomePage from "./components/HomePage";
 import { ConsultingVideoSection } from "./components/ConsultingVideoSection";
 import { PartnersSection } from "./components/PartnersSection";
