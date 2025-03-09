@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
         <motion.div
-        className="w-3/4 md:w-1/2 max-w-md relative z-10 mt-[-38px]"
+        className="w-3/4 md:w-1/2 max-w-md relative z-10 mt-[-58px]"
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >

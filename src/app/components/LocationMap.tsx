@@ -2,7 +2,7 @@
 
 export default function LocationMap() {
   return (
-    <section className="text-center py-12 px-6 sm:px-12 md:px-20 bg-gradient-to-r from-blue-200 to-blue-100">
+    <section className="text-center py-12 px-6 sm:px-12 md:px-20 bg-gradient-to-r from-blue-200 to-blue-100 bg-white">
       <h2 className="text-3xl font-extrabold text-gray-900 tracking-wide">
         NOSSA <span className="text-blue-500">LOCALIZAÇÃO</span>
       </h2>
