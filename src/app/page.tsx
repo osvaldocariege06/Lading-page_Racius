@@ -8,6 +8,7 @@ import CarouselServices from "./components/CarouselServices";
 import LocationMap from "./components/LocationMap";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
+import MoreServicesCarousel from "./components/MoreServicesCarousel";
 
 
 
@@ -17,13 +18,14 @@ import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <HomePage />
       <PartnersSection />
       <ConsultingVideoSection />
-      <AboutUs />
+      <AboutUs/>
       <ServicesSection />
       <CarouselServices />
+      <MoreServicesCarousel />
       <LocationMap />
       <ContactSection />
       <Footer />

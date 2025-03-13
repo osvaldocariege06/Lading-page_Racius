@@ -3,7 +3,7 @@ import React from "react";
 
 export function ConsultingVideoSection() {
   return (
-    <section className="bg-gradient-to-r from-blue-200 to-blue-100 py-16 px-6 md:px-16 flex flex-col md:flex-row items-center gap-10">
+    <section className="bg-gradient-to-r from-blue-200 to-blue-100 py-16 px-6 md:px-16 flex flex-col md:flex-row items-center gap-10 font-[Arial]">
 
       <div className="max-w-lg text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">

@@ -16,18 +16,18 @@ import {
 const services = [
   {
     title: "Planeamento e Gestão de Projetos",
-    icon: <Briefcase size={40} className="text-blue-600" />, 
+    icon: <Briefcase size={40} className="text-blue-400" />, 
     details: [
       "Estudos de viabilidade técnica e financeira",
       "Gestão e acompanhamento de obras",
-      "Planeamento estratégico",
+      "Planejamento estratégico",
       "Gestão de contratos e mitigação de riscos",
       "Consultoria em BIM (Building Information Modeling)"
     ],
   },
   {
     title: "Engenharia e Projetos",
-    icon: <Building size={40} className="text-green-600" />,
+    icon: <Building size={40} className="text-green-400" />,
     details: [
       "Desenvolvimento de projetos arquitetônicos e estruturais",
       "Projetos de infraestrutura (redes de água, esgoto, drenagem e energia)",
@@ -37,7 +37,7 @@ const services = [
   },
   {
     title: "Licenciamento e Regularização",
-    icon: <FileText size={40} className="text-yellow-600" />,
+    icon: <FileText size={40} className="text-yellow-400" />,
     details: [
       "Assessoria para obtenção de licenças ambientais",
       "Regularização fundiária e cadastro técnico de imóveis",
@@ -47,7 +47,7 @@ const services = [
   },
   {
     title: "Sustentabilidade e Eficiência Energética",
-    icon: <Leaf size={40} className="text-green-500" />,
+    icon: <Leaf size={40} className="text-green-300" />,
     details: [
       "Construção sustentável e gestão de resíduos",
       "Análise de eficiência energética",
@@ -57,7 +57,7 @@ const services = [
   },
   {
     title: "Patologia das Construções",
-    icon: <Wrench size={40} className="text-red-500" />,
+    icon: <Wrench size={40} className="text-red-400" />,
     details: [
       "Diagnóstico de falhas estruturais",
       "Inspeções prediais e laudos técnicos",
@@ -67,7 +67,7 @@ const services = [
   },
   {
     title: "Avaliação e Gestão de Ativos Imobiliários",
-    icon: <Home size={40} className="text-blue-500" />,
+    icon: <Home size={40} className="text-blue-300" />,
     details: [
       "Avaliação de imóveis para alienação e financiamento",
       "Estudos de viabilidade imobiliária",
@@ -77,7 +77,7 @@ const services = [
   },
   {
     title: "Segurança do Trabalho e Normas",
-    icon: <ShieldAlert size={40} className="text-orange-500" />,
+    icon: <ShieldAlert size={40} className="text-orange-400" />,
     details: [
       "Elaboração de PPRA, PCMSO e LTCAT",
       "Treinamentos em segurança do trabalho",
@@ -87,7 +87,7 @@ const services = [
   },
   {
     title: "Tecnologia e Inovação na Construção",
-    icon: <Cpu size={40} className="text-purple-500" />,
+    icon: <Cpu size={40} className="text-purple-400" />,
     details: [
       "Implementação de novas tecnologias construtivas",
       "Automação de processos e gestão digital",
@@ -126,14 +126,14 @@ export function ServicesSection() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-white" id="serviços">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Nossos Serviços</h2>
-      <p className="text-gray-600 uppercase text-sm md:text-lg mt-2 font-medium">
-        SERVIÇOS PRESTADOS PELA RACIUS ADVISORY - SERVIÇOS DE CONSULTORIA, LDA
-      </p>
-      <p className="font-semibold text-gray-800 mt-4 text-lg sm:text-xl md:text-2xl">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black" id="serviços">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight font-sans">Nossos Serviços</h1>
+      <h2 className="text-gray-300 uppercase text-sm md:text-lg mt-2 font-medium font-sans">
+        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-teal-300 px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
+      </h2>
+      <h3 className="font-semibold text-gray-300 mt-4 text-lg sm:text-xl md:text-2xl font-sans">
         Consultoria em construção civil e áreas técnicas afins
-      </p>
+      </h3>
 
       <div className="overflow-hidden w-full max-w-5xl mx-auto mt-8">
         <motion.div
@@ -147,13 +147,13 @@ export function ServicesSection() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border rounded-2xl shadow-xl bg-white flex flex-col items-center text-center max-w-sm flex-1"
+                  className="p-6 border rounded-2xl shadow-xl bg-gray-900 flex flex-col items-center text-center max-w-sm flex-1"
                 >
                   {service.icon}
-                  <h3 className="text-xl font-semibold mt-4 text-gray-900">
+                  <h3 className="text-xl font-semibold mt-4 text-white font-sans">
                     {service.title}
                   </h3>
-                  <ul className="text-gray-600 mt-2 text-sm md:text-base text-left flex-1">
+                  <ul className="text-gray-300 mt-2 text-sm md:text-base text-left flex-1 font-sans">
                     {service.details.map((detail, index) => (
                       <li key={index} className="mt-1">• {detail}</li>
                     ))}
@@ -165,10 +165,9 @@ export function ServicesSection() {
         </motion.div>
       </div>
 
-    
       <div className="flex justify-center mt-6 space-x-2">
         {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
-          <div key={i} className={`w-3 h-3 rounded-full ${index === i ? 'bg-gray-900' : 'bg-gray-400'}`} />
+          <div key={i} className={`w-3 h-3 rounded-full ${index === i ? 'bg-white' : 'bg-gray-500'}`} />
         ))}
       </div>
     </section>

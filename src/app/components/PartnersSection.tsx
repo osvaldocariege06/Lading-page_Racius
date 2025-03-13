@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function PartnersSection() {
   return (
-    <section className="text-center py-12 bg-white" id="comece">
-      <h2 className="text-4xl font-extrabold tracking-wide text-gray-900">
-        Nossos <span className="text-blue-600">PARCEIROS</span>
+    <section className="text-center py-10  bg-black" id="comece">
+      <h2 className="text-4xl font-extrabold tracking-wide text-white font-sans">
+        Nossos <span className="text-blue-clayn-400">PARCEIROS</span>
       </h2>
 
       <div className="flex flex-wrap justify-center items-center gap-8 mt-8 opacity-80">

@@ -88,15 +88,15 @@ export default function Home() {
       </motion.section>
 
       <svg
-        className="absolute bottom-0 left-0 w-full"
-        viewBox="0 0 1440 320"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill="white"
-          d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
-        ></path>
-      </svg>
+  className="absolute bottom-0 left-0 w-full"
+  viewBox="0 0 1440 320"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill="black" /* Alterado de white para black */
+    d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
+  ></path>
+</svg>
 
     </div>
   );

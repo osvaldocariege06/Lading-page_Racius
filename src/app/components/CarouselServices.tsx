@@ -7,7 +7,7 @@ import { HomeIcon, HandshakeIcon, Building2Icon, FileTextIcon, BarChartIcon, Ref
 const services = [
   {
     title: "Avaliação e Due Diligence Imobiliária",
-    icon: <HomeIcon size={50} className="text-blue-600" />, 
+    icon: <HomeIcon size={50} className="text-blue-400" />, 
     details: [
       "Avaliação de imóveis para compra, venda ou garantia bancária.",
       "Análise de viabilidade econômica e financeira.",
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Gestão Patrimonial e Fundiária",
-    icon: <HandshakeIcon size={50} className="text-green-600" />, 
+    icon: <HandshakeIcon size={50} className="text-green-400" />, 
     details: [
       "Administração de imóveis para proprietários públicos e privados.",
       "Regularização fundiária e obtenção de títulos de propriedade.",
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Intermediação e Comercialização de Imóveis",
-    icon: <Building2Icon size={50} className="text-yellow-600" />, 
+    icon: <Building2Icon size={50} className="text-yellow-400" />, 
     details: [
       "Venda, compra e locação de imóveis comerciais, residenciais e industriais.",
       "Captação de investidores e negociação de contratos.",
@@ -34,7 +34,7 @@ const services = [
   },
   {
     title: "Desenvolvimento Imobiliário e Planejamento Urbano",
-    icon: <FileTextIcon size={50} className="text-purple-600" />, 
+    icon: <FileTextIcon size={50} className="text-purple-400" />, 
     details: [
       "Estudos de viabilidade técnica para novos empreendimentos.",
       "Planejamento urbanístico e aprovação de projetos.",
@@ -43,7 +43,7 @@ const services = [
   },
   {
     title: "Consultoria em Investimentos Imobiliários",
-    icon: <BarChartIcon size={50} className="text-red-600" />, 
+    icon: <BarChartIcon size={50} className="text-red-400" />, 
     details: [
       "Identificação de oportunidades de investimento.",
       "Estruturação de fundos imobiliários e operações de securitização.",
@@ -52,7 +52,7 @@ const services = [
   },
   {
     title: "Reestruturação e Recuperação de Ativos Imobiliários",
-    icon: <RefreshCcwIcon size={50} className="text-orange-600" />, 
+    icon: <RefreshCcwIcon size={50} className="text-orange-400" />, 
     details: [
       "Diagnóstico e revitalização de imóveis subutilizados.",
       "Estratégias para liquidação e maximização de valor patrimonial.",
@@ -88,12 +88,12 @@ export default function CarouselServices() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-white">
-      <h2 className="text-5xl font-extrabold text-black">OUTROS SERVIÇOS</h2>
-      <p className="text-gray-600 uppercase text-lg mt-2">
-        SERVIÇOS PRESTADOS PELA RACIUS ADVISORY
-      </p>
-      <p className="font-semibold text-black mt-4 text-2xl">Consultoria Imobiliária</p>
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black">
+      <h1 className="text-5xl font-extrabold text-white">OUTROS SERVIÇOS</h1>
+      <h2 className="text-gray-300 uppercase text-lg mt-2">
+        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-teal-300 px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
+      </h2>
+      <h3 className="font-semibold text-white mt-4 text-2xl">Consultoria Imobiliária</h3>
 
       <div className="mt-10 overflow-hidden w-full max-w-6xl mx-auto">
         <motion.div
@@ -107,11 +107,11 @@ export default function CarouselServices() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border rounded-2xl shadow-xl bg-white flex flex-col items-center text-center max-w-xs sm:max-w-sm md:max-w-md"
+                  className="p-6 border rounded-2xl shadow-xl bg-gray-900 flex flex-col items-center text-center max-w-xs sm:max-w-sm md:max-w-md"
                 >
                   <div className="mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
-                  <ul className="text-gray-600 mt-2 text-sm md:text-base text-left">
+                  <h3 className="text-xl font-bold text-white">{service.title}</h3>
+                  <ul className="text-gray-300 mt-2 text-sm md:text-base text-left">
                     {service.details.map((detail, index) => (
                       <li key={index} className="mt-1">• {detail}</li>
                     ))}
@@ -127,7 +127,7 @@ export default function CarouselServices() {
         {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
           <span
             key={i}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${index === i ? "bg-black w-5" : "bg-gray-400 opacity-50"}`}
+            className={`w-4 h-4 rounded-full transition-all duration-300 ${index === i ? "bg-white w-5" : "bg-gray-500 opacity-50"}`}
           ></span>
         ))}
       </div>

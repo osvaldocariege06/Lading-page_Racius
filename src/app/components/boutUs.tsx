@@ -30,12 +30,12 @@ export function AboutUs() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="text-center py-16 px-6 sm:px-12 md:px-16 bg-white overflow-hidden" id="sobre-nós">
+    <section ref={sectionRef} className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black overflow-hidden" id="sobre-nós">
       <motion.h2
         initial={{ opacity: 0, y: -50 }}
         animate={inView ? { opacity: 1, y: 0, rotate: [0, 5, -5, 0] } : {}}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="text-3xl md:text-4xl font-bold text-black"
+        className="text-3xl md:text-4xl font-bold text-white font-[Arial]"
       >
         Sobre Nós
       </motion.h2>
@@ -43,7 +43,7 @@ export function AboutUs() {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={inView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="text-gray-500 italic text-sm md:text-base mt-2"
+        className="text-white italic text-sm md:text-base mt-2 font-[Arial]"
       >
         Somos uma empresa de consultoria
       </motion.p>
@@ -51,10 +51,10 @@ export function AboutUs() {
         initial={{ opacity: 0, x: -100 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-        className="mt-6 text-gray-700 font-semibold text-base md:text-lg max-w-4xl mx-auto leading-relaxed"
+        className="mt-6 text-cyan-400 font-semibold text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-[Arial]"
       >
         <p>
-          A <span className="text-blue-600 font-bold">RACIUS ADVISORY</span> é especializada em consultoria
+          A <span className="text-teal-300 font-bold">RACIUS ADVISORY</span> é especializada em consultoria
           imobiliária e construção civil, oferecendo soluções inovadoras e eficientes para o mercado.
         </p>
         <p className="mt-4">
