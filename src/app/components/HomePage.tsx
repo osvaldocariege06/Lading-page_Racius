@@ -37,7 +37,7 @@ export default function Home() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-[#073340] to-[#557A99] text-white overflow-hidden font-[Roboto]">
+    <div className="relative min-h-screen bg-blue-800 text-white overflow-hidden font-[Roboto] opacity-90">
       <NavBar />
 
       <motion.section
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="text-center md:text-left max-w-lg">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
             {displayText.includes("RACIUS ADVISORY") ? (
-              <span className="text-blue-300">{displayText}</span>
+              <span className="text-blue-600">{displayText}</span>
             ) : (
               displayText
             )}

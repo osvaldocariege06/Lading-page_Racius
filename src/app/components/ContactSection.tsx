@@ -4,17 +4,17 @@ import ContactInfo from "./ContactInfo";
 
 export default function ContactSection() {
   return (
-    <section className="bg-gradient-to-br from-blue-200 to-blue-100 py-16 px-6 sm:px-8 md:px-16 text-center mt-20 font-['Roboto']" id="localização">
+    <section className="bg-blue-800  py-16 px-6 sm:px-8 md:px-16 text-center mt-20 font-['Roboto']" id="localização">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
-        Entre em <span className="text-blue-600">Contato</span>
+        Entre em <span className="text-white">Contato</span>
       </h2>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-        {/* Texto e Botão */}
+      
         <div className="text-center md:text-left">
-          <p className="text-xl sm:text-2xl text-gray-800 font-semibold leading-relaxed">
-            QUER <span className="text-blue-600">TRABALHAR</span> CONNOSCO?
-            <br /> ENTRE EM <span className="text-blue-600">CONTATO</span>
+          <p className="text-xl sm:text-2xl text-gray-900 font-semibold leading-relaxed">
+            QUER <span className="text-white">TRABALHAR</span> CONNOSCO?
+            <br /> ENTRE EM <span className="text-white">CONTATO</span>
           </p>
           <a
             href="mailto:ivandropanzo@gmail.com"
