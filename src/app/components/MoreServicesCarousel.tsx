@@ -117,9 +117,9 @@ export default function MoreServicesCarousel() {
     <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black">
       <h1 className="text-5xl font-extrabold text-white">MAIS SERVIÇOS</h1>
       <h2 className="text-gray-300 uppercase text-lg mt-2">
-        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-teal-300 px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
+        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
       </h2>
-      <h3 className="font-semibold text-white mt-4 text-2xl">Consultoria de negócios</h3>
+      <h3 className="font-semibold text-gray-300 mt-4 text-2xl">Consultoria de negócios</h3>
 
       <div className="mt-10 overflow-hidden w-full max-w-6xl mx-auto">
         <motion.div
@@ -131,10 +131,11 @@ export default function MoreServicesCarousel() {
             <div key={i} className="flex min-w-full justify-center space-x-6">
               {services.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage).map((service, j) => (
                 <motion.div
-                  key={j}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-6 border rounded-2xl shadow-xl bg-gray-900 flex flex-col items-center text-center max-w-xs sm:max-w-sm md:max-w-md"
-                >
+                key={j}
+                whileHover={{ scale: 1.05 }}
+                className="p-6 border border-blue-700 rounded-2xl shadow-xl bg-blue-900/80 flex flex-col items-center text-center max-w-sm flex-1"
+              >
+              
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-white">{service.title}</h3>
                   <ul className="text-gray-300 mt-2 text-sm md:text-base text-left">
@@ -153,8 +154,8 @@ export default function MoreServicesCarousel() {
         {Array.from({ length: totalSlides }).map((_, i) => (
           <span
             key={i}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${
-              index === i ? "bg-white w-5" : "bg-gray-500 opacity-50"
+            className={`w-3 h-4 rounded-full transition-all duration-300 ${
+              index === i ? "bg-white w-3" : "bg-gray-500 opacity-50"
             }`}
           ></span>
         ))}

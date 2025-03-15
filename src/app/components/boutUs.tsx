@@ -35,7 +35,7 @@ export function AboutUs() {
         initial={{ opacity: 0, y: -50 }}
         animate={inView ? { opacity: 1, y: 0, rotate: [0, 5, -5, 0] } : {}}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="text-3xl md:text-4xl font-bold text-white font-[Arial]"
+        className="text-3xl md:text-4xl font-bold text-white font-[Roboto]"
       >
         Sobre Nós
       </motion.h2>
@@ -43,7 +43,7 @@ export function AboutUs() {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={inView ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="text-white italic text-sm md:text-base mt-2 font-[Arial]"
+        className="text-gray-400 italic text-sm md:text-base mt-2 font-[Roboto]"
       >
         Somos uma empresa de consultoria
       </motion.p>
@@ -51,10 +51,10 @@ export function AboutUs() {
         initial={{ opacity: 0, x: -100 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-        className="mt-6 text-cyan-400 font-semibold text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-[Arial]"
+        className="mt-6 text-gray-300 font-semibold text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-[Roboto]"
       >
         <p>
-          A <span className="text-teal-300 font-bold">RACIUS ADVISORY</span> é especializada em consultoria
+          A <span className="text-white font-bold">RACIUS ADVISORY</span> é especializada em consultoria
           imobiliária e construção civil, oferecendo soluções inovadoras e eficientes para o mercado.
         </p>
         <p className="mt-4">

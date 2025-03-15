@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInfo";
 
 export default function ContactSection() {
   return (
-    <section className="bg-gradient-to-br from-blue-200 to-blue-100 py-16 px-6 sm:px-8 md:px-16 text-center mt-20 font-[Arial]" id="localização">
+    <section className="bg-gradient-to-br from-blue-200 to-blue-100 py-16 px-6 sm:px-8 md:px-16 text-center mt-20 font-['Roboto']" id="localização">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
         Entre em <span className="text-blue-600">Contato</span>
       </h2>

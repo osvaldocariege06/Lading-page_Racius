@@ -88,12 +88,12 @@ export default function CarouselServices() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]">
       <h1 className="text-5xl font-extrabold text-white">OUTROS SERVIÇOS</h1>
       <h2 className="text-gray-300 uppercase text-lg mt-2">
-        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-teal-300 px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
+        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
       </h2>
-      <h3 className="font-semibold text-white mt-4 text-2xl">Consultoria Imobiliária</h3>
+      <h3 className="font-semibold text-gray-300 mt-4 text-2xl">Consultoria Imobiliária</h3>
 
       <div className="mt-10 overflow-hidden w-full max-w-6xl mx-auto">
         <motion.div
@@ -107,7 +107,7 @@ export default function CarouselServices() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border rounded-2xl shadow-xl bg-gray-900 flex flex-col items-center text-center max-w-xs sm:max-w-sm md:max-w-md"
+                  className="p-6 border border-blue-700 rounded-2xl shadow-xl bg-blue-900/80 flex flex-col items-center text-center max-w-sm flex-1"
                 >
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-white">{service.title}</h3>
@@ -127,7 +127,7 @@ export default function CarouselServices() {
         {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
           <span
             key={i}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${index === i ? "bg-white w-5" : "bg-gray-500 opacity-50"}`}
+            className={`w-3 h-4 rounded-full transition-all duration-300 ${index === i ? "bg-white w-3" : "bg-gray-500 opacity-50"}`}
           ></span>
         ))}
       </div>

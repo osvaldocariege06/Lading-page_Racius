@@ -37,7 +37,7 @@ export default function Home() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-[#073340] to-[#557A99] text-white overflow-hidden font-serif">
+    <div className="relative min-h-screen bg-gradient-to-r from-[#073340] to-[#557A99] text-white overflow-hidden font-[Roboto]">
       <NavBar />
 
       <motion.section

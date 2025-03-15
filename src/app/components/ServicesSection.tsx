@@ -126,10 +126,10 @@ export function ServicesSection() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black" id="serviços">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]" id="serviços">
       <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight font-sans">Nossos Serviços</h1>
       <h2 className="text-gray-300 uppercase text-sm md:text-lg mt-2 font-medium font-sans">
-        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-teal-300 px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
+        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
       </h2>
       <h3 className="font-semibold text-gray-300 mt-4 text-lg sm:text-xl md:text-2xl font-sans">
         Consultoria em construção civil e áreas técnicas afins
@@ -147,7 +147,7 @@ export function ServicesSection() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border rounded-2xl shadow-xl bg-gray-900 flex flex-col items-center text-center max-w-sm flex-1"
+                  className="p-6 border border-blue-700 rounded-2xl shadow-xl bg-blue-900/80 flex flex-col items-center text-center max-w-sm flex-1"
                 >
                   {service.icon}
                   <h3 className="text-xl font-semibold mt-4 text-white font-sans">
@@ -163,12 +163,6 @@ export function ServicesSection() {
             </div>
           ))}
         </motion.div>
-      </div>
-
-      <div className="flex justify-center mt-6 space-x-2">
-        {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
-          <div key={i} className={`w-3 h-3 rounded-full ${index === i ? 'bg-white' : 'bg-gray-500'}`} />
-        ))}
       </div>
     </section>
   );

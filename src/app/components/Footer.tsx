@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-6 text-center font-[Arial]">
+    <footer className="bg-black text-white py-10 px-6 text-center font-[Robotol]">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8">
      
         <h3 className="text-2xl font-extrabold tracking-wide text-blue-400">

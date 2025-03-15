@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function PartnersSection() {
   return (
-    <section className="text-center py-10  bg-black" id="comece">
+    <section className="text-center py-10  bg-black font-[Roboto]" id="comece">
       <h2 className="text-4xl font-extrabold tracking-wide text-white font-sans">
         Nossos <span className="text-blue-clayn-400">PARCEIROS</span>
       </h2>

@@ -8,7 +8,7 @@ export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center px-6 md:px-8 py-4 bg-transparent relative z-50 font-[Arial] tracking-wide">
+    <nav className="flex justify-between items-center px-6 md:px-8 py-4 bg-transparent relative z-50 font-[Roboto] tracking-wide">
       <h1 className="text-xl md:text-2xl font-bold text-white">RACIUS ADVISORY</h1>
 
       <button className="md:hidden p-2 z-50" onClick={() => setMenuOpen(!menuOpen)}>
