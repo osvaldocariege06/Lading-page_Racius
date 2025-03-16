@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import NavBar from "./NavBar";
+
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-blue-800 text-white overflow-hidden font-[Roboto] opacity-90">
-      <NavBar />
+     
 
       <motion.section
         initial={{ opacity: 0, y: 20 }}

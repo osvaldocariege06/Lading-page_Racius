@@ -9,6 +9,7 @@ import LocationMap from "./components/LocationMap";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
 import MoreServicesCarousel from "./components/MoreServicesCarousel";
+import NavBar from "./components/NavBar";
 
 
 
@@ -19,6 +20,8 @@ import MoreServicesCarousel from "./components/MoreServicesCarousel";
 export default function Home() {
   return (
     <div className="bg-black">
+
+      <NavBar />
       <HomePage />
       <PartnersSection />
       <ConsultingVideoSection />
@@ -29,6 +32,8 @@ export default function Home() {
       <LocationMap />
       <ContactSection />
       <Footer />
+      
+    
      
 
     </div>

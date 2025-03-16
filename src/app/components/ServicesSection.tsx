@@ -163,6 +163,16 @@ export function ServicesSection() {
             </div>
           ))}
         </motion.div>
+        <div className="flex justify-center mt-6">
+        {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
+          <div
+            key={i}
+            className={`h-3 w-3 mx-1 rounded-full transition-all ${
+              index === i ? "bg-white scale-110" : "bg-gray-500 opacity-50"
+            }`}
+          ></div>
+        ))}
+      </div>
       </div>
     </section>
   );
