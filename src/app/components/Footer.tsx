@@ -17,18 +17,36 @@ export default function Footer() {
           <p className="text-gray-400 hover:text-white transition-colors duration-300">
             Consultoria imobiliária
           </p>
+          <p className="text-gray-400 hover:text-white transition-colors duration-300">
+            Consultoria de negócio
+          </p>
         </div>
 
         <div className="text-base text-center sm:text-left">
           <p className="font-semibold text-lg mb-2 text-gray-200">Contato</p>
           <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Whatsapp
+            Linkedin
           </p>
           <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            ivandropanzo@gmail.com
+            Instagram
           </p>
           <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            +244 947838429
+            Facebook
+          </p>
+          <p className="text-gray-400 hover:text-white transition-colors duration-300">
+          geral@raciusadvisory.com
+          
+          </p>
+          <p className="text-gray-400 hover:text-white transition-colors duration-300">
+          cimobiliaria@raciusadvsory.com
+          
+          </p>
+          <p className="text-gray-400 hover:text-white transition-colors duration-300">
+          ecassendo@raciusadvisory.com
+          
+          </p>
+          <p className="text-gray-400 hover:text-white transition-colors duration-300">
+            +244 926437705
           </p>
         </div>
       </div>

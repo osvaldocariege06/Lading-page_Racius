@@ -38,8 +38,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-blue-800 text-white overflow-hidden font-[Roboto] opacity-90">
-     
-
+      
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -78,26 +77,31 @@ export default function Home() {
         </div>
 
         <motion.div
-        className="w-3/4 md:w-1/2 max-w-md relative z-10 mt-[-58px]"
-        animate={{ y: [0, -15, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <Image src="/amico.png" alt="Ilustração" width={500} height={400} layout="responsive" />
-      </motion.div>
-
+          className="w-3/4 md:w-1/2 max-w-md relative z-10 mt-2"
+          animate={{ y: [0, -15, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image 
+            src="/HomeImagem.png" 
+            alt="Imagem de Construção e Imobiliária" 
+            width={800} 
+            height={1000} 
+            layout="responsive" 
+            className=" "
+          />
+        </motion.div>
       </motion.section>
 
       <svg
-  className="absolute bottom-0 left-0 w-full"
-  viewBox="0 0 1440 320"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    fill="black" /* Alterado de white para black */
-    d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
-  ></path>
-</svg>
-
+      className="absolute bottom-0 left-0 w-full"
+      viewBox="0 0 1440 320"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="black" 
+        d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
+      ></path>
+    </svg>
     </div>
   );
 }

@@ -2,7 +2,7 @@
 import HomePage from "./components/HomePage";
 import { ConsultingVideoSection } from "./components/ConsultingVideoSection";
 import { PartnersSection } from "./components/PartnersSection";
-import { AboutUs } from "./components/boutUs";
+import { AboutUs } from "./components/AboutUs";
 import { ServicesSection } from "./components/ServicesSection";
 import CarouselServices from "./components/CarouselServices";
 import LocationMap from "./components/LocationMap";
