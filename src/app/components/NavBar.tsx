@@ -32,7 +32,7 @@ export default function NavBar() {
           className={`transition-colors duration-300 ${scrolled ? "filter-none" : "filter brightness-0 invert"}`}
         />
         <h1 className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${scrolled ? "text-green-800" : "text-white"}`}>
-          AVISO RACIUS
+          RACIUS ADVISORY
         </h1>
       </div>
 
