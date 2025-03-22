@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInfo";
 
 export default function ContactSection() {
   return (
-    <section className="bg-blue-800  py-16 px-6 sm:px-8 md:px-16 text-center mt-20 font-['Roboto']" id="localização">
+    <section className="bg-green-800  py-16 px-6 sm:px-8 md:px-16 text-center mt-20 font-['Roboto']" id="localização">
       <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">
         Entre em <span className="text-white">Contato</span>
       </h2>
@@ -18,7 +18,7 @@ export default function ContactSection() {
           </p>
           <a
             href="mailto:geral@raciusadvisory.com"
-            className="mt-6 inline-block px-8 py-3 bg-blue-500 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-blue-600 transition"
+            className="mt-6 inline-block px-8 py-3 bg-green-400 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-green-600 transition"
           >
             Contacte-nos
           </a>

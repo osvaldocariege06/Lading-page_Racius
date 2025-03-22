@@ -1,53 +1,81 @@
 "use client";
 
+import Link from "next/link";
+import { Briefcase, Home, Landmark, Phone, Mail, Linkedin, Instagram, Facebook, MessageCircle } from "lucide-react";
+
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-6 text-center font-[Robotol]">
+    <footer className="bg-black text-white py-10 px-6 text-center font-[Roboto]">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8">
-     
         <h3 className="text-2xl font-extrabold tracking-wide text-white">
           RACIUS ADVISORY
         </h3>
 
         <div className="text-base text-center sm:text-left">
-          <p className="font-semibold text-lg mb-2 text-gray-200">Serviços</p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Consultoria em construção civil
+          <p className="font-semibold text-lg mb-2 text-gray-200 flex items-center gap-2">
+           Serviços
           </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Consultoria imobiliária
-          </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Consultoria de negócio
-          </p>
+         <Link href="#serviços">
+          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Home size={20} /> Consultoria em construção civil
+            </p>
+         </Link>
+         <Link href="#Outros">
+          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Landmark size={20} /> Consultoria imobiliária
+            </p>
+         </Link>
+         <Link href="#negocio">
+          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Briefcase size={20} /> Consultoria de negócio
+            </p>
+         </Link>
         </div>
 
         <div className="text-base text-center sm:text-left">
-          <p className="font-semibold text-lg mb-2 text-gray-200">Contato</p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Linkedin
+          <p className="font-semibold text-lg mb-2 text-gray-200 flex items-center gap-2">
+            Contato
           </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Instagram
+          <Link href="https://www.linkedin.com/company/racius-edific-se/">
+            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Linkedin size={20} /> Linkedin
+            </p>
+          </Link>
+          <Link href="https://wa.me/244926437705">
+            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <MessageCircle size={20} /> Whatsapp
+            </p>
+          </Link>
+          <Link href="https://www.instagram.com/raciusadvisory?igsh=eXRpdnZnMms4c2F0">
+            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Instagram size={20} /> Instagram
+            </p>
+          </Link>
+          <Link href="https://www.facebook.com/profile.php?id=61552165228202">
+            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Facebook size={20} /> Facebook
+            </p>
+          </Link>
+          <Link href="mailto:geral@raciusadvisory.com">
+            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Mail size={20} /> geral@raciusadvisory.com
+            </p>
+          </Link>
+          <Link href="mailto:cimobiliaria@raciusadvisory.com">
+            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Mail size={20} /> cimobiliaria@raciusadvisory.com
+            </p>
+          </Link>
+         <Link href="mailto:ecassendo@raciusadvisory.com">
+          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+              <Mail size={20} /> ecassendo@raciusadvisory.com
+            </p>
+         </Link>
+      
+          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+            <Phone size={20} /> +244 926437705
           </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            Facebook
-          </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-          geral@raciusadvisory.com
-          
-          </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-          cimobiliaria@raciusadvsory.com
-          
-          </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-          ecassendo@raciusadvisory.com
-          
-          </p>
-          <p className="text-gray-400 hover:text-white transition-colors duration-300">
-            +244 926437705
-          </p>
+       
         </div>
       </div>
 

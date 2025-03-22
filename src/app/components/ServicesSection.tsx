@@ -147,7 +147,7 @@ export function ServicesSection() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border border-blue-700 rounded-2xl shadow-xl bg-blue-900/80 flex flex-col items-center text-center max-w-sm flex-1"
+                  className="p-6 border border-green-700 rounded-2xl shadow-xl bg-green-900/80 flex flex-col items-center text-center max-w-sm flex-1"
                 >
                   {service.icon}
                   <h3 className="text-xl font-semibold mt-4 text-white font-sans">

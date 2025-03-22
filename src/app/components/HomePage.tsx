@@ -37,7 +37,7 @@ export default function Home() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <div className="relative min-h-screen bg-blue-800 text-white overflow-hidden font-[Roboto] opacity-90">
+    <div className="relative min-h-screen text-white overflow-hidden font-[Roboto] opacity-90 bg-gradient-to-b bg-green-800">
       
       <motion.section
         initial={{ opacity: 0, y: 20 }}
@@ -48,18 +48,18 @@ export default function Home() {
         <div className="text-center md:text-left max-w-lg">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
             {displayText.includes("RACIUS ADVISORY") ? (
-              <span className="text-blue-600">{displayText}</span>
+              <span className="text-green-300">{displayText}</span>
             ) : (
               displayText
             )}
           </h2>
 
           <div className="mt-6 flex flex-col md:flex-row gap-4">
-            <Link href="#comece">
+            <Link href="#colaboradores">
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.05, backgroundColor: "#61a5c2" }}
-                className="bg-blue-300 text-blue-900 px-6 py-3 rounded-lg w-full md:w-auto shadow-md transition-all"
+                whileHover={{ scale: 1.05,  }}
+                className="bg-green-400 hover:bg-green-600 text-white px-6 py-3 rounded-lg w-full md:w-auto shadow-md transition-all"
               >
                 Comece
               </motion.button>
@@ -86,22 +86,22 @@ export default function Home() {
             alt="Imagem de Construção e Imobiliária" 
             width={800} 
             height={1000} 
-            layout="responsive" 
-            className=" "
+            layout="responsive"
+            className="mt-20"
           />
         </motion.div>
       </motion.section>
 
       <svg
-      className="absolute bottom-0 left-0 w-full"
-      viewBox="0 0 1440 320"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill="black" 
-        d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
-      ></path>
-    </svg>
+        className="absolute bottom-0 left-0 w-full"
+        viewBox="0 0 1440 320"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="black" 
+          d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
+        ></path>
+      </svg>
     </div>
   );
 }

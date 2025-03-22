@@ -88,7 +88,7 @@ export default function CarouselServices() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]" id="Outros">
       <h1 className="text-5xl font-extrabold text-white">OUTROS SERVIÇOS</h1>
       <h2 className="text-gray-300 uppercase text-lg mt-2">
         SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
@@ -107,7 +107,7 @@ export default function CarouselServices() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border border-blue-700 rounded-2xl shadow-xl bg-blue-900/80 flex flex-col items-center text-center max-w-sm flex-1"
+                  className="p-6 border border-green-700 rounded-2xl shadow-xl bg-green-900/80 flex flex-col items-center text-center max-w-sm flex-1"
                 >
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-white">{service.title}</h3>
