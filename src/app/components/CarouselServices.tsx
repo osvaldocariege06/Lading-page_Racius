@@ -107,7 +107,7 @@ export default function CarouselServices() {
                 <motion.div
                   key={j}
                   whileHover={{ scale: 1.05 }}
-                  className="p-6 border border-green-700 rounded-2xl shadow-xl bg-green-900/80 flex flex-col items-center text-center max-w-sm flex-1"
+                  className="p-6 border border-green-800 rounded-2xl shadow-xl bg-[#48A6A1] flex flex-col items-center text-center max-w-sm flex-1"
                 >
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-white">{service.title}</h3>

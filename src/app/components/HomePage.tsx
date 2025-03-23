@@ -37,7 +37,7 @@ export default function Home() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <div className="relative min-h-screen text-white overflow-hidden font-[Roboto] opacity-90 bg-gradient-to-b bg-green-800">
+    <div className="relative min-h-screen text-white overflow-hidden font-[Roboto] opacity-90 bg-gradient-to-b bg-[#48A6A1]">
       
       <motion.section
         initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export default function Home() {
               <motion.button
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.05,  }}
-                className="bg-green-400 hover:bg-green-600 text-white px-6 py-3 rounded-lg w-full md:w-auto shadow-md transition-all"
+                className="bg-[#48A6A1] hover:bg-[#3c8f8a] text-white px-6 py-3 rounded-lg w-full md:w-auto shadow-md transition-all"
               >
                 Comece
               </motion.button>

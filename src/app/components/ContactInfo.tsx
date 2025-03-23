@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ContactInfo() {
   return (
-    <div className="bg-green-900 text-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm font-[Roboto]">
+    <div className="bg-[#48A6A1] text-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm font-[Roboto]">
       <div className="flex items-center gap-4 mb-4">
         <MapPin className="w-6 h-6 text-green-300" />
         <p className="text-base sm:text-lg font-medium">Angola / Luanda / Rua Amilcar</p>
