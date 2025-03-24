@@ -16,17 +16,17 @@ export default function Footer() {
            Serviços
           </p>
          <Link href="#serviços">
-          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+          <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Home size={20} /> Consultoria em construção civil
             </p>
          </Link>
          <Link href="#Outros">
-          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+          <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Landmark size={20} /> Consultoria imobiliária
             </p>
          </Link>
          <Link href="#negocio">
-          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+          <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Briefcase size={20} /> Consultoria de negócio
             </p>
          </Link>
@@ -37,42 +37,31 @@ export default function Footer() {
             Contato
           </p>
           <Link href="https://www.linkedin.com/company/racius-edific-se/">
-            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+            <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Linkedin size={20} /> Linkedin
             </p>
           </Link>
           <Link href="https://wa.me/244926437705">
-            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+            <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <MessageCircle size={20} /> Whatsapp
             </p>
           </Link>
           <Link href="https://www.instagram.com/raciusadvisory?igsh=eXRpdnZnMms4c2F0">
-            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+            <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Instagram size={20} /> Instagram
             </p>
           </Link>
           <Link href="https://www.facebook.com/profile.php?id=61552165228202">
-            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+            <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Facebook size={20} /> Facebook
             </p>
           </Link>
           <Link href="mailto:geral@raciusadvisory.com">
-            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+            <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
               <Mail size={20} /> geral@raciusadvisory.com
             </p>
           </Link>
-          <Link href="mailto:cimobiliaria@raciusadvisory.com">
-            <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
-              <Mail size={20} /> cimobiliaria@raciusadvisory.com
-            </p>
-          </Link>
-         <Link href="mailto:ecassendo@raciusadvisory.com">
-          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
-              <Mail size={20} /> ecassendo@raciusadvisory.com
-            </p>
-         </Link>
-      
-          <p className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-2">
+          <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
             <Phone size={20} /> +244 926437705
           </p>
        

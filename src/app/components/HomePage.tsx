@@ -2,12 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const texts = ["Bem-vindo à", "RACIUS ADVISORY", "Empresa especializada em consultoria"];
+  const texts = [
+    "Bem-vindo à",
+    "RACIUS ADVISORY",
+    "Empresa especializada em consultoria",
+  ];
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -37,8 +40,7 @@ export default function Home() {
   }, [displayText, isDeleting, index]);
 
   return (
-    <div className="relative min-h-screen text-white overflow-hidden font-[Roboto] opacity-90 bg-gradient-to-b bg-[#48A6A1]">
-      
+    <div className="relative min-h-screen text-white overflow-hidden font-[Roboto] opacity-90 bg-gradient-to-b from-[#48A6A1] to-[#1E4D4A]">
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -58,7 +60,7 @@ export default function Home() {
             <Link href="#colaboradores">
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.05,  }}
+                whileHover={{ scale: 1.05 }}
                 className="bg-[#48A6A1] hover:bg-[#3c8f8a] text-white px-6 py-3 rounded-lg w-full md:w-auto shadow-md transition-all"
               >
                 Comece
@@ -67,7 +69,11 @@ export default function Home() {
             <Link href="#serviços">
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.05, backgroundColor: "#e6e6e6", color: "#000" }}
+                whileHover={{
+                  scale: 1.05,
+                  backgroundColor: "#e6e6e6",
+                  color: "#000",
+                }}
                 className="border border-white px-6 py-3 rounded-lg w-full md:w-auto shadow-md transition-all"
               >
                 Explore
@@ -76,20 +82,31 @@ export default function Home() {
           </div>
         </div>
 
-        <motion.div
-          className="w-3/4 md:w-1/2 max-w-md relative z-10 mt-2"
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <Image 
-            src="/HomeImagem.png" 
-            alt="Imagem de Construção e Imobiliária" 
-            width={800} 
-            height={1000} 
-            layout="responsive"
-            className="mt-20"
-          />
-        </motion.div>
+        {/* Container da imagem com efeito circular transparente */}
+        <div className="relative w-3/4 md:w-1/2 max-w-md z-10 mt-2 flex justify-center">
+          {/* Círculo transparente com borda sutil */}
+          <motion.div
+            className="absolute w-[320px] h-[320px] md:w-[400px] md:h-[400px] border-[2px] border-white/20 rounded-full"
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          ></motion.div>
+
+          {/* Imagem animada */}
+          <motion.div
+            className="relative"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Image
+              src="/HomeImagem.png"
+              alt="Imagem de Construção e Imobiliária"
+              width={800}
+              height={1000}
+              layout="responsive"
+              className="mt-20"
+            />
+          </motion.div>
+        </div>
       </motion.section>
 
       <svg
@@ -98,7 +115,7 @@ export default function Home() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fill="black" 
+          fill="black"
           d="M0,160 C120,220 240,250 360,240 C480,230 600,190 720,160 C840,130 960,110 1080,130 C1200,150 1320,200 1440,240 V320 H0 Z"
         ></path>
       </svg>

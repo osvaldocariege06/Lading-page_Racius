@@ -116,10 +116,10 @@ export default function MoreServicesCarousel() {
   return (
     <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black" id="negocio">
       <h1 className="text-5xl font-extrabold text-white">MAIS SERVIÇOS</h1>
-      <h2 className="text-gray-300 uppercase text-lg mt-2">
+      <h2 className="text-[#48A6A1]  uppercase text-lg mt-2">
         SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
       </h2>
-      <h3 className="font-semibold text-gray-300 mt-4 text-2xl">Consultoria de negócios</h3>
+      <h3 className="font-semibold text-[#48A6A1]  mt-4 text-2xl">Consultoria de negócios</h3>
 
       <div className="mt-10 overflow-hidden w-full max-w-6xl mx-auto">
         <motion.div

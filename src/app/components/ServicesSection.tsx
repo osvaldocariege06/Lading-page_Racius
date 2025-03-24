@@ -15,7 +15,7 @@ import {
 
 const services = [
   {
-    title: "Planeamento e Gestão de Projetos",
+    title: "Planeamento e Gestão de Projectos",
     icon: <Briefcase size={40} className="text-blue-400" />, 
     details: [
       "Estudos de viabilidade técnica e financeira",
@@ -26,7 +26,7 @@ const services = [
     ],
   },
   {
-    title: "Engenharia e Projetos",
+    title: "Engenharia e Projcetos",
     icon: <Building size={40} className="text-green-400" />,
     details: [
       "Desenvolvimento de projetos arquitetônicos e estruturais",
@@ -128,10 +128,10 @@ export function ServicesSection() {
   return (
     <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]" id="serviços">
       <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight font-sans">Nossos Serviços</h1>
-      <h2 className="text-gray-300 uppercase text-sm md:text-lg mt-2 font-medium font-sans">
+      <h2 className="text-[#48A6A1]  uppercase text-sm md:text-lg mt-2 font-medium font-sans">
         SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
       </h2>
-      <h3 className="font-semibold text-gray-300 mt-4 text-lg sm:text-xl md:text-2xl font-sans">
+      <h3 className="font-semibold text-[#48A6A1]  mt-4 text-lg sm:text-xl md:text-2xl font-sans">
         Consultoria em construção civil e áreas técnicas afins
       </h3>
 
