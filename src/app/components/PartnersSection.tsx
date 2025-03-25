@@ -11,7 +11,7 @@ import {
   Building2, 
   ClipboardList, 
   DollarSign, 
-  Wrench
+
 } from "lucide-react";
 
 const partners = [
