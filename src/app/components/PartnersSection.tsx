@@ -54,7 +54,7 @@ function PartnerSlider({ items }: PartnerSliderProps) {
   }, [items.length]);
 
   return (
-    <div className="relative overflow-hidden w-full max-w-md mx-auto font-[Arial Nova Cond Light]">
+    <div className="relative overflow-hidden w-full max-w-md mx-auto font-[Arial Nova Cond Light] mt-20">
       <motion.div
         animate={{ translateX: `-${current * 100}%` }}
         transition={{ ease: "easeInOut", duration: 0.8 }}
@@ -76,7 +76,7 @@ function PartnerSlider({ items }: PartnerSliderProps) {
 
 export function PartnersSection() {
   return (
-    <section className="text-center py-10 bg-black font-[Roboto]" id="colaboradores">
+    <section className="text-center py-10 bg-black font-[Roboto] mt-40" id="colaboradores">
       <h2 className="text-4xl font-extrabold tracking-wide text-white">
         NOSSOS <span className="text-[#48A6A1]">COLABORADORES</span>
       </h2>
