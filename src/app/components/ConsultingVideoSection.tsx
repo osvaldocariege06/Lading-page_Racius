@@ -3,7 +3,7 @@ import React from "react";
 
 export function ConsultingVideoSection() {
   return (
-    <section className="bg-[#48A6A1] py-16 px-6 md:px-16 flex flex-col md:flex-row items-center gap-10 font-[Roboto]">
+    <section className="bg-[#48A6A1] py-16 px-6 md:px-16 flex flex-col md:flex-row items-center gap-10 font-[Arial Nova Cond Light]">
       <div className="max-w-lg text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-100 leading-tight">
           Empresa de consultoria em <span className="text-white">engenharia civil e áreas técnicas afins, consultoria imobiliária e consultoria de negócio</span>

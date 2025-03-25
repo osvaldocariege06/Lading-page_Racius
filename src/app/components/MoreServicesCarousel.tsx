@@ -114,7 +114,7 @@ export default function MoreServicesCarousel() {
   }, [totalSlides]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black" id="negocio">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Arial Nova Cond Light]" id="negocio">
       <h1 className="text-5xl font-extrabold text-white">MAIS SERVIÇOS</h1>
       <h2 className="text-[#48A6A1]  uppercase text-lg mt-2">
         SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA

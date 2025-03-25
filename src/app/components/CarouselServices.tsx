@@ -88,7 +88,7 @@ export default function CarouselServices() {
   }, [itemsPerPage]);
 
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]" id="Outros">
+    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Arial Nova Cond Light]" id="Outros">
       <h1 className="text-5xl font-extrabold text-white">OUTROS SERVIÇOS</h1>
       <h2 className="text-[#48A6A1]  uppercase text-lg mt-2">
         SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA

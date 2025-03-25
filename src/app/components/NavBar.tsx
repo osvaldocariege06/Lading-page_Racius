@@ -20,7 +20,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-8 py-4 transition-colors duration-300 z-[100] font-[Roboto] tracking-wide 
+      className={`fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-8 py-4 transition-colors duration-300 z-[100] font-[Arial Nova Cond Light] tracking-wide 
         ${scrolled ? "bg-white shadow-md" : "bg-[#48A6A1]"}`}
     >
       <div className="flex items-center gap-3">

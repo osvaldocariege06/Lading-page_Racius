@@ -54,7 +54,7 @@ function PartnerSlider({ items }: PartnerSliderProps) {
   }, [items.length]);
 
   return (
-    <div className="relative overflow-hidden w-full max-w-md mx-auto">
+    <div className="relative overflow-hidden w-full max-w-md mx-auto font-[Arial Nova Cond Light]">
       <motion.div
         animate={{ translateX: `-${current * 100}%` }}
         transition={{ ease: "easeInOut", duration: 0.8 }}

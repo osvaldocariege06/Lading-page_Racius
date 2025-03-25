@@ -58,7 +58,7 @@ export function AboutUs() {
     
     <section  id="sobre-nós"
       ref={sectionRef}
-      className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black overflow-hidden"
+      className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black overflow-hidden font-[Arial Nova Cond Light] "
      
     >
       {sections[currentIndex].icon && (
@@ -75,7 +75,7 @@ export function AboutUs() {
         initial={{ opacity: 0, y: -50 }}
         animate={visible ? { opacity: 1, y: 0 } : { opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="text-3xl md:text-4xl font-bold text-white font-[Roboto]"
+        className="text-3xl md:text-4xl font-bold text-white font-[Arial Nova Cond Light]"
       >
         {sections[currentIndex].title}
       </motion.h2>
@@ -83,7 +83,7 @@ export function AboutUs() {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={visible ? { opacity: 1, scale: 1 } : { opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="mt-6 text-[#48A6A1] font-semibold text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-[Roboto]"
+        className="mt-6 text-[#48A6A1] font-semibold text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-[Arial Nova Cond Light]"
       >
         {sections[currentIndex].content}
       </motion.p>

@@ -26,7 +26,7 @@ const services = [
     ],
   },
   {
-    title: "Engenharia e Projcetos",
+    title: "Engenharia e Projectos",
     icon: <Building size={40} className="text-green-400" />,
     details: [
       "Desenvolvimento de projetos arquitetônicos e estruturais",
