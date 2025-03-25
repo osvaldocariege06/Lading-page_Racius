@@ -47,7 +47,7 @@ export default function Home() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-20 pb-24"
       >
-        <div className="text-center md:text-left max-w-lg">
+        <div className="text-center md:text-left max-w-lg max-md:mt-20">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
             {displayText.includes("RACIUS ADVISORY") ? (
               <span className="text-green-300">{displayText}</span>
@@ -82,23 +82,19 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Container da imagem com efeito circular transparente */}
+      
         <div className="relative w-3/4 md:w-1/2 max-w-md z-10 mt-2 flex justify-center">
-          {/* Círculo transparente com borda sutil */}
-          <motion.div
-            className="absolute w-[320px] h-[320px] md:w-[400px] md:h-[400px] border-[2px] border-white/20 rounded-full"
-            animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-          ></motion.div>
+      
+      
 
-          {/* Imagem animada */}
+        
           <motion.div
             className="relative"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/HomeImagem.png"
+              src="/ImageHome.jpg"
               alt="Imagem de Construção e Imobiliária"
               width={800}
               height={1000}
