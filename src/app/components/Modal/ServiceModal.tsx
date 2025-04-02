@@ -3,7 +3,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function ServiceModal({ service, onClose }) {
+type Props = {
+  service: {
+    title: string;
+    icon: React.ReactNode;
+    details: string[];
+  };
+  onClose: () => void;
+}
+
+export default function ServiceModal({ service, onClose }: Props) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <motion.div

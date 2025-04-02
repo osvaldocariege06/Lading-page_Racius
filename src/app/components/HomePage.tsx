@@ -3,14 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function Home() {
-  const texts = [
+  const texts = useMemo(() => [
     "Bem-vindo à",
     "RACIUS ADVISORY",
     "Empresa especializada em consultoria",
-  ];
+  ], []);
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -37,7 +37,7 @@ export default function Home() {
     }, isDeleting ? deletingSpeed : typingSpeed);
 
     return () => clearTimeout(interval);
-  }, [displayText, isDeleting, index]);
+  }, [displayText, isDeleting, index, texts]);
 
   return (
     <div className="relative w-full h-screen flex flex-col items-center justify-start overflow-hidden font-['Arial Nova Cond Light']">

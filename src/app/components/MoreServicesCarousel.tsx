@@ -12,6 +12,7 @@ import {
   BarChartBigIcon,
 } from "lucide-react";
 import Image from "next/image";
+import type { ServiceProps } from "./CarouselServices";
 
 const services = [
   {
@@ -90,7 +91,7 @@ export default function MoreServicesCarousel() {
   const [index, setIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(2);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentService, setCurrentService] = useState(null);
+  const [currentService, setCurrentService] = useState<ServiceProps>();
   const totalSlides = Math.ceil(services.length / itemsPerPage);
 
   useEffect(() => {
@@ -115,14 +116,14 @@ export default function MoreServicesCarousel() {
     return () => clearInterval(interval);
   }, [totalSlides]);
 
-  const handleCardClick = (service) => {
+  const handleCardClick = (service: ServiceProps) => {
     setCurrentService(service);
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setCurrentService(null);
+    setCurrentService(undefined);
   };
 
   return (

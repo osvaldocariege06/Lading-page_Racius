@@ -62,11 +62,17 @@ const services = [
   }
 ];
 
+export type ServiceProps = {
+  title: string;
+  icon: React.JSX.Element;
+  details: string[];
+}
+
 export default function CarouselServices() {
   const [index, setIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(2);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentService, setCurrentService] = useState(null);
+  const [currentService, setCurrentService] = useState<ServiceProps>();
 
   useEffect(() => {
     const updateItemsPerPage = () => {
@@ -90,14 +96,14 @@ export default function CarouselServices() {
     return () => clearInterval(interval);
   }, [itemsPerPage]);
 
-  const handleCardClick = (service) => {
+  const handleCardClick = (service: ServiceProps) => {
     setCurrentService(service);
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setCurrentService(null);
+    setCurrentService(undefined);
   };
 
   return (

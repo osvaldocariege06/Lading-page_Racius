@@ -13,6 +13,7 @@ import {
   Cpu,
 } from "lucide-react";
 import Image from "next/image";
+import type { ServiceProps } from "./CarouselServices";
 
 
 const services = [
@@ -103,7 +104,7 @@ export function ServicesSection() {
   const [index, setIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentService, setCurrentService] = useState(null);
+  const [currentService, setCurrentService] = useState<ServiceProps>();
 
   useEffect(() => {
     const updateItemsPerPage = () => {
@@ -129,14 +130,14 @@ export function ServicesSection() {
     return () => clearInterval(interval);
   }, [itemsPerPage]);
 
-  const handleCardClick = (service) => {
+  const handleCardClick = (service: ServiceProps) => {
     setCurrentService(service);
     setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    setCurrentService(null);
+    setCurrentService(undefined);
   };
 
   return (
@@ -215,10 +216,10 @@ export function ServicesSection() {
             >
               &times;
             </button>
-            <h3 className="text-2xl font-semibold text-[#48A6A1]">{currentService.title}</h3>
+            <h3 className="text-2xl font-semibold text-[#48A6A1]">{currentService?.title ?? ""}</h3>
             <div className="mt-4">
               <ul className="text-gray-700">
-                {currentService.details.map((detail, index) => (
+                {currentService?.details.map((detail, index) => (
                   <li key={index} className="mt-1">• {detail}</li>
                 ))}
               </ul>
