@@ -9,7 +9,7 @@ export default function ContactInfo() {
     <div className="bg-[#48A6A1] text-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm font-[Arial Nova Cond Light]">
       <div className="flex items-center gap-4 mb-4">
         <MapPin className="w-6 h-6 text-green-300" />
-        <p className="text-base sm:text-lg font-medium">Angola / Luanda / Rua Amilcar</p>
+        <p className="text-base sm:text-lg font-medium">Angola / Luanda / Belas Business Park</p>
       </div>
       <div className="flex items-center gap-4 mb-4">
         <Mail className="w-6 h-6 text-green-300" />

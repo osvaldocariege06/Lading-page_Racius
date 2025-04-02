@@ -12,24 +12,19 @@ import MoreServicesCarousel from "./components/MoreServicesCarousel";
 import NavBar from "./components/NavBar";
 
 
-
-
-
-
-
 export default function Home() {
   return (
     <div className="bg-black">
 
       <NavBar />
       <HomePage />
-      <PartnersSection />
-      <ConsultingVideoSection />
       <AboutUs/>
       <ServicesSection />
       <CarouselServices />
       <MoreServicesCarousel />
+      <ConsultingVideoSection />
       <LocationMap />
+      <PartnersSection />
       <ContactSection />
       <Footer />
       

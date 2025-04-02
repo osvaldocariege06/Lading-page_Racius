@@ -88,7 +88,7 @@ export default function NavBar() {
         ))}
         <li>
         <Link
-            href="#localização"
+            href="#Contacte-nos"
             className="bg-[#48A6A1] text-green-900 px-6 py-3 rounded-lg transition-transform transform hover:scale-105 hover:bg-green-400 shadow-md"
             scroll={true}
           >

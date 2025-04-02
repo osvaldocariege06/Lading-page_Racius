@@ -58,7 +58,7 @@ export function AboutUs() {
     
     <section  id="sobre-nós"
       ref={sectionRef}
-      className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black overflow-hidden font-[Arial Nova Cond Light] "
+      className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black overflow-hidden font-[Arial Nova Cond Light] mt-20"
      
     >
       {sections[currentIndex].icon && (

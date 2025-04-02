@@ -5,8 +5,9 @@ import { Briefcase, Home, Landmark, Phone, Mail, Linkedin, Instagram, Facebook, 
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-6 text-center font-[Arial Nova Cond Light]">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8">
+    <footer className="bg-black text-white py-10 px-6 text-center font-[Arial Nova Cond Light] mt-20">
+      <hr className="mb-20 "></hr>
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8 ">
         <h3 className="text-2xl font-extrabold tracking-wide text-white">
           RACIUS ADVISORY
         </h3>
@@ -17,7 +18,7 @@ export default function Footer() {
           </p>
          <Link href="#serviços">
           <p className="text-[#48A6A1]  hover:text-white transition-colors duration-300 flex items-center gap-2">
-              <Home size={20} /> Consultoria em construção civil
+              <Home size={20} /> Consultoria em engenharia civil
             </p>
          </Link>
          <Link href="#Outros">

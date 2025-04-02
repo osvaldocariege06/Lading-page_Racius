@@ -12,11 +12,13 @@ import {
   ShieldAlert,
   Cpu,
 } from "lucide-react";
+import Image from "next/image";
+
 
 const services = [
   {
     title: "Planeamento e Gestão de Projectos",
-    icon: <Briefcase size={40} className="text-blue-400" />, 
+    icon: <Briefcase size={40} className="text-blue-400" />,
     details: [
       "Estudos de viabilidade técnica e financeira",
       "Gestão e acompanhamento de obras",
@@ -100,6 +102,8 @@ const services = [
 export function ServicesSection() {
   const [index, setIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentService, setCurrentService] = useState(null);
 
   useEffect(() => {
     const updateItemsPerPage = () => {
@@ -125,55 +129,103 @@ export function ServicesSection() {
     return () => clearInterval(interval);
   }, [itemsPerPage]);
 
+  const handleCardClick = (service) => {
+    setCurrentService(service);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setCurrentService(null);
+  };
+
   return (
-    <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Roboto]" id="serviços">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight font-sans">Nossos Serviços</h1>
-      <h2 className="text-[#48A6A1]  uppercase text-sm md:text-lg mt-2 font-medium font-sans">
+    <div className="relative w-full h-full py-16 px-6 sm:px-12 md:px-16 mt-20 font-[Arial Nova Cond Light] mb-40">
+      <Image
+        src="/Serviços/engenharia.jpg"
+        alt="Serviços Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 z-0 opacity-30"
+      />
+      <h1 className="text-5xl font-extrabold text-white text-center">Nossos Serviços</h1>
+      <h2 className="text-[#48A6A1] uppercase text-sm md:text-lg mt-2 font-medium text-center">
         SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
       </h2>
-      <h3 className="font-semibold text-[#48A6A1]  mt-4 text-lg sm:text-xl md:text-2xl font-sans">
-        Consultoria em construção civil e áreas técnicas afins
+      <h3 className="font-semibold text-[#48A6A1] mt-4 text-lg sm:text-xl md:text-2xl text-center">
+        Consultoria em engenharia civil e áreas técnicas afins
       </h3>
-
-      <div className="overflow-hidden w-full max-w-5xl mx-auto mt-8">
+      <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black font-[Arial Nova Cond Light]" id="serviços">
+        <div className="overflow-hidden w-full max-w-5xl mx-auto mt-8">
         <motion.div
-          className="flex"
-          animate={{ x: `-${index * 100}%` }}
-          transition={{ ease: "easeInOut", duration: 0.8 }}
-        >
-          {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
-            <div key={i} className="flex min-w-full justify-center space-x-6 flex-wrap items-stretch">
-              {services.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage).map((service, j) => (
-                <motion.div
-                  key={j}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-6 border border-green-800 rounded-2xl shadow-xl bg-[#48A6A1] flex flex-col items-center text-center max-w-sm flex-1"
-                >
-                  {service.icon}
-                  <h3 className="text-xl font-semibold mt-4 text-white font-sans">
-                    {service.title}
-                  </h3>
-                  <ul className="text-gray-300 mt-2 text-sm md:text-base text-left flex-1 font-sans">
-                    {service.details.map((detail, index) => (
-                      <li key={index} className="mt-1">• {detail}</li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          ))}
-        </motion.div>
-        <div className="flex justify-center mt-6">
-        {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
-          <div
-            key={i}
-            className={`h-3 w-3 mx-1 rounded-full transition-all ${
-              index === i ? "bg-white scale-110" : "bg-gray-500 opacity-50"
-            }`}
-          ></div>
+  className="flex"
+  animate={{ x: `-${index * 100}%` }}
+  transition={{ ease: "easeInOut", duration: 0.8 }}
+  style={{ position: "relative" }}
+>
+  {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
+    <div key={i} className="flex min-w-full justify-center space-x-6 flex-wrap items-stretch">
+      {services.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage).map((service, j) => {
+
+        const isOffScreen = index !== i;
+        return (
+          <motion.div
+              key={j}
+              whileHover={{ scale: 1.05 }}
+              className={`p-6 border border-green-800 rounded-2xl shadow-xl bg-[#48A6A1] flex flex-col items-center text-center max-w-sm flex-1 cursor-pointer ${
+                isOffScreen ? "pointer-events-none opacity-30" : ""
+              }`}
+              onClick={() => !isOffScreen && handleCardClick(service)} 
+            >
+              {service.icon}
+              <h3 className="text-xl font-semibold mt-4 text-white font-sans">
+                {service.title}
+              </h3>
+              <ul className="text-gray-300 mt-2 text-sm md:text-base text-left flex-1 font-sans">
+                {service.details.map((detail, index) => (
+                  <li key={index} className="mt-1">• {detail}</li>
+                ))}
+              </ul>
+            </motion.div>
+              );
+            })}
+          </div>
         ))}
-      </div>
-      </div>
-    </section>
+      </motion.div>
+
+          <div className="flex justify-center mt-6">
+            {Array.from({ length: Math.ceil(services.length / itemsPerPage) }).map((_, i) => (
+              <div
+                key={i}
+                className={`h-3 w-3 mx-1 rounded-full transition-all ${
+                  index === i ? "bg-white scale-110" : "bg-gray-500 opacity-50"
+                }`}></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+    
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-lg w-11/12 md:w-1/2 relative">
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-2 right-2 text-2xl font-bold text-gray-500"
+            >
+              &times;
+            </button>
+            <h3 className="text-2xl font-semibold text-[#48A6A1]">{currentService.title}</h3>
+            <div className="mt-4">
+              <ul className="text-gray-700">
+                {currentService.details.map((detail, index) => (
+                  <li key={index} className="mt-1">• {detail}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }

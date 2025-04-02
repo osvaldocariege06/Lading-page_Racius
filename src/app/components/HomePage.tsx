@@ -41,8 +41,12 @@ export default function Home() {
 
   return (
     <div className="relative w-full h-screen flex flex-col items-center justify-start overflow-hidden font-['Arial Nova Cond Light']">
-     
-      <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg mt-32">
+      
+      <motion.div 
+        className="relative w-full h-full rounded-lg overflow-hidden shadow-lg mt-32"
+        animate={{ scale: [1, 1.05, 1], y: [0, -10, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      >
         <Image
           src="/ImageHome.jpg"
           alt="Imagem de engenharia civil"
@@ -51,7 +55,7 @@ export default function Home() {
           className="rounded-lg"
           priority
         />
-      </div>
+      </motion.div>
 
       <div className="absolute top-[25%] left-1/2 transform -translate-x-1/2 text-center w-full px-6 md:px-16 mt-32">
         <h2 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
@@ -83,8 +87,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      
     </div>
   );
 }

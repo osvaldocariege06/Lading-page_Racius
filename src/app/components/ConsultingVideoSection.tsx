@@ -9,7 +9,7 @@ export function ConsultingVideoSection() {
           Empresa de consultoria em <span className="text-white">engenharia civil e áreas técnicas afins, consultoria imobiliária e consultoria de negócio</span>
         </h2>
         <p className="mt-4 text-lg text-gray-300">
-          Sua visão, nossa estratégia, crescemos juntos.
+          Sua visão. Nossa estratégia, crescemos juntos.
         </p>
         <Link href="#localização">
           <button className="mt-6 bg-[#48A6A1] text-white px-6 py-3 rounded-lg shadow-md text-lg font-semibold tracking-wide transition-transform duration-300 transform hover:scale-105 hover:bg-[#3B8E8A]">
