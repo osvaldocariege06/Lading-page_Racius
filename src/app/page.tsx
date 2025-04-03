@@ -27,10 +27,6 @@ export default function Home() {
       <PartnersSection />
       <ContactSection />
       <Footer />
-      
-    
-     
-
     </div>
   );
 }
