@@ -136,9 +136,6 @@ export default function MoreServicesCarousel() {
         className="absolute inset-0 z-0 opacity-30"
       />
       <h1 className="md:text-5xl font-extrabold text-white text-4xl text-center">MAIS SERVIÇOS</h1>
-      <h2 className="text-[#48A6A1] uppercase text-lg mt-2 text-center">
-        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold ">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
-      </h2>
       <h3 className="font-semibold text-[#48A6A1] mt-4 text-2xl text-center">Consultoria de negócios</h3>
       <section className="text-center py-16 px-6 sm:px-12 md:px-16 bg-black " id="negocio">
         <div className="mt-10 overflow-hidden w-full max-w-6xl mx-auto">

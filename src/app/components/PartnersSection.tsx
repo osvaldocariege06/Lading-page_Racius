@@ -2,45 +2,65 @@
 
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { 
-  Building, 
-  Landmark, 
-  HardHat, 
-  School, 
-  TrendingUp, 
-  Building2, 
-  ClipboardList, 
-  DollarSign, 
-
+import {
+  Building,
+  Landmark,
+  HardHat,
+  School,
+  TrendingUp,
+  Building2,
+  ClipboardList,
+  DollarSign,
 } from "lucide-react";
 
 const partners = [
   {
     category: "Instituições Públicas em Angola",
     items: [
-      { name: "Ministério das Obras Públicas, Urbanismo e Habitação (MINOPUH)", icon: Building },
-      { name: "Instituto de Planeamento e Gestão Urbana de Luanda (IPGUL)", icon: Building },
-      { name: "Laboratório de Engenharia de Angola (LEA)", icon:HardHat },
+      {
+        name: "Ministério das Obras Públicas, Urbanismo e Habitação (MINOPUH)",
+        icon: Building,
+      },
+      {
+        name: "Instituto de Planeamento e Gestão Urbana de Luanda (IPGUL)",
+        icon: Building,
+      },
+      { name: "Laboratório de Engenharia de Angola (LEA)", icon: HardHat },
       { name: "Instituto Nacional de Estradas de Angola (INEA)", icon: School },
       { name: "Comissão de Mercado de Capitais (CMC)", icon: TrendingUp },
       { name: "Banco Nacional de Angola (BNA)", icon: Landmark },
-      { name: "Agência Nacional de Petróleo, Gás e Biocombustíveis (ANPG)", icon: ClipboardList },
+      {
+        name: "Agência Nacional de Petróleo, Gás e Biocombustíveis (ANPG)",
+        icon: ClipboardList,
+      },
     ],
   },
   {
     category: "Instituições e Organizações Internacionais",
     items: [
-      { name: "Federação Internacional de Engenheiros Consultores (FIDIC)", icon: HardHat },
+      {
+        name: "Federação Internacional de Engenheiros Consultores (FIDIC)",
+        icon: HardHat,
+      },
       { name: "Banco Africano de Desenvolvimento (BAD)", icon: Landmark },
-      { name: "Banco Mundial e IFC (International Finance Corporation)", icon: Landmark },
-      { name: "Organização Internacional de Normalização (ISO)", icon: Building2 },
+      {
+        name: "Banco Mundial e IFC (International Finance Corporation)",
+        icon: Landmark,
+      },
+      {
+        name: "Organização Internacional de Normalização (ISO)",
+        icon: Building2,
+      },
       { name: "Fórum Económico Mundial (WEF)", icon: DollarSign },
     ],
   },
 ];
 
 interface PartnerSliderProps {
-  items: { name: string; icon: React.ComponentType<{ className?: string; size?: number }> }[];
+  items: {
+    name: string;
+    icon: React.ComponentType<{ className?: string; size?: number }>;
+  }[];
 }
 
 function PartnerSlider({ items }: PartnerSliderProps) {
@@ -76,9 +96,14 @@ function PartnerSlider({ items }: PartnerSliderProps) {
 
 export function PartnersSection() {
   return (
-    <section className="text-center py-10 bg-black font-[Roboto] mt-40" id="colaboradores">
+    <section
+      className={`text-center py-20 bg-black mt-0 bg-[url(/partners-image01.jpg)] relative bg-cover bg-center bg-no-repeat`}
+      id="colaboradores"
+    >
+      <div className="absolute bg-black/90 w-full top-0 left-0 bottom-0 z-10" />
+      <div className="relative z-50">
       <h2 className="text-4xl font-extrabold tracking-wide text-white">
-        NOSSOS <span className="text-[#48A6A1]">COLABORADORES</span>
+        Colaboradores frequentes
       </h2>
       <div className="mt-8 space-y-12 flex flex-col items-center">
         {partners.map((partnerGroup, groupIndex) => (
@@ -95,6 +120,7 @@ export function PartnersSection() {
             <PartnerSlider items={partnerGroup.items} />
           </motion.div>
         ))}
+      </div>
       </div>
     </section>
   );

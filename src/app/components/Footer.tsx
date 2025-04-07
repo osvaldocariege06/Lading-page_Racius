@@ -5,8 +5,8 @@ import { Briefcase, Home, Landmark, Phone, Mail, Linkedin, Instagram, Facebook, 
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-6 text-center font-[Arial Nova Cond Light] mt-20">
-      <hr className="mb-20 "></hr>
+    <footer className="bg-black text-white py-10 px-6 text-center font-[Arial Nova Cond Light] mt-10">
+      {/* <hr className="mb-20 "></hr> */}
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-8 ">
         <h3 className="text-2xl font-extrabold tracking-wide text-white">
           RACIUS ADVISORY

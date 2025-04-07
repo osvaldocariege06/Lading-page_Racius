@@ -150,9 +150,6 @@ export function ServicesSection() {
         className="absolute inset-0 z-0 opacity-30"
       />
       <h1 className="text-5xl font-extrabold text-white text-center">Nossos Serviços</h1>
-      <h2 className="text-[#48A6A1] uppercase text-sm md:text-lg mt-2 font-medium text-center">
-        SERVIÇOS PRESTADOS PELA <span className="bg-blue-clayn-400 text-white px-2 py-1 rounded font-bold">RACIUS ADVISORY</span> - SERVIÇOS DE CONSULTORIA, LDA
-      </h2>
       <h3 className="font-semibold text-[#48A6A1] mt-4 text-lg sm:text-xl md:text-2xl text-center">
         Consultoria em engenharia civil e áreas técnicas afins
       </h3>

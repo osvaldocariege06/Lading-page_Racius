@@ -3,10 +3,10 @@
 export default function LocationMap() {
   return (
     <section className="text-center py-12 px-6 sm:px-12 md:px-20 bg-[#48A6A1] to-blue-100  font-[Arial Nova Cond Light] mt-20" id="localização">
-      <h2 className="text-3xl font-extrabold text-gray-900 tracking-wide">
-        NOSSA <span className="text-white">LOCALIZAÇÃO</span>
+      <h2 className="text-3xl font-extrabold text-gray-50 tracking-wide">
+        Visite-nos
       </h2>
-      <p className="mt-2 text-lg text-gray-900">Visite-nos: Belas Business Park, Talatona, Edifício Malange, Angola.</p>
+      <p className="mt-2 text-lg text-gray-200">Belas Business Park, Talatona, Edifício Malange, Angola.</p>
 
       <div className="w-full max-w-md sm:max-w-lg md:max-w-3xl mx-auto mt-6 h-64 sm:h-72 md:h-80 rounded-lg overflow-hidden shadow-xl  opacity-90">
         <iframe
